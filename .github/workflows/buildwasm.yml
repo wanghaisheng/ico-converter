@@ -1,9 +1,11 @@
  name: Build WASM
 
  on:
+   workflow_dispatch:  # Allows manual trigger
+ 
    push:
-     branches:
-       - main
+     # branches:
+       # - main
      paths:
        - "src/**"
        - "Cargo.toml"
