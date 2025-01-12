@@ -1,5 +1,8 @@
 name: Send a Tweet
-on: [push]
+on: 
+  workflow_dispatch:  # Allows manual trigger
+
+# [push]
 jobs:
   tweet:
     runs-on: ubuntu-latest
